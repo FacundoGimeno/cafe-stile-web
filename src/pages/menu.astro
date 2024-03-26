@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FoodMenu from "../components/menu/FoodMenu.vue";
+---
+
+<Layout title="Cafe Stile - Menu">
+  <main class="h-auto mt-[1%] md:mx-[10%]">
+    <div
+      class="gap-8 md:p-8 p-4 bg-amber-400 rounded-lg bg-opacity-25"
+    >
+      <h1 class="text-7xl text-center font-light text-white cursor-default">
+        Menu
+      </h1>
+      <FoodMenu client:load/>
+    </div>
+  </main>
+</Layout>

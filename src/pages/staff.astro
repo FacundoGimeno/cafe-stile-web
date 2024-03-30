@@ -1,19 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import StaffCarousel from "../components/carousel/StaffCarousel.vue";
 ---
 
-<Layout title="Cafe Stile - Staff">
-  <main class="h-full mt-[1%] md:mx-[10%]">
-    <div
-      class="flex flex-col h-full items-center justify-start md:p-8 p-4 bg-amber-400 rounded-lg bg-opacity-25"
-    >
-      <h1
-        class="text-7xl text-center font-light text-white cursor-default mb-8"
-      >
-        Staff
-      </h1>
-      <StaffCarousel client:only />
-    </div>
-  </main>
-</Layout>
+<main
+  class="h-dvh flex flex-col items-center justify-start md:p-8 p-4 mt-20 rounded-lg"
+>
+  <h1 class="text-7xl text-center font-light text-white cursor-default">
+    Staff
+  </h1>
+  <StaffCarousel client:only />
+</main>

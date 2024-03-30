@@ -1,29 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import StileCarousel from "../components/carousel/StileCarousel.vue";
+import AboutUs from "./aboutUs.astro";
+import Menu from "./menu.astro";
+import Staff from "./staff.astro";
 ---
 
-<Layout title="Cafe Stile - About us">
-  <main class="h-auto mt-[1%] md:mx-[10%]">
-    <div
-      class="flex xl:flex-row flex-col items-center justify-between gap-2 p-10 bg-amber-400 rounded-lg bg-opacity-25"
-    >
-      <div
-        class="w-full flex flex-col items-center xl:items-start justify-center gap-8 mb-4"
-      >
-        <h1 class="text-7xl text-white font-light cursor-default">About us</h1>
-        <p
-          class="text-white font-thin rounded-lg m-0 xl:mt-6 w-full lg:w-2/3 cursor-default"
-        >
-          Stile is a Café running by an italian man who wanted to create an
-          unique experience where each waitress will treat you in a different
-          way. So you can enjoy a good blend while you are attended in the way
-          you prefer. Our blends use high quality organic coffee grains, we also
-          have great pastry. If you want some main dishes we offer some good
-          options like our iconic omurice. We'll waiting for you!
-        </p>
-      </div>
-      <StileCarousel client:only/>
-    </div>
-  </main>
+<Layout title="Cafe Stile - Home">
+  <a href="#">
+    <i
+      class="fa-solid fa-chevron-up fixed top-[90%] left-[95%] text-white bg-amber-800 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer"
+    ></i>
+  </a>
+  <section id="aboutUs">
+    <AboutUs />
+  </section>
+  <div class="flex items-center justify-center">
+    <hr class="h-1 bg-slate-200 w-96 self-center rounded-full" />
+  </div>
+  <section id="menu">
+    <Menu />
+  </section>
+  <div class="flex items-center justify-center">
+    <hr class="h-1 bg-slate-200 w-96 self-center rounded-full" />
+  </div>
+  <section id="staff">
+    <Staff />
+  </section>
 </Layout>

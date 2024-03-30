@@ -7,7 +7,7 @@
   >
     <Slide :key="currentSlide">
       <div
-        class="flex items-center justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg mt-8 rounded-md h-full md:w-2/3 w-[80%] hover:scale-105 transition slide"
+        class="flex items-center justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg mt-8 rounded-md md:w-2/3 w-[80%] h-2/3 hover:scale-105 transition slide"
       >
         <img
           :src="currentImage.image"

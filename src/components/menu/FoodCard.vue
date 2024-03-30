@@ -1,15 +1,15 @@
 <template>
   <Transition appear>
     <div
-      class="flex lg:flex-row flex-col items-center gap-4 p-4 bg-amber-400 bg-opacity-25 rounded-lg hover:scale-105 transition"
+      class="flex lg:flex-row flex-col items-center gap-4 p-4 bg-amber-400 bg-opacity-15 shadow-lg rounded-lg hover:scale-105 transition"
     >
       <div>
         <img
           :src="getFoodData.image"
           alt=""
-          width="200"
-          height="200"
-          class="min-w-[200px] min-h-[200px] object-cover rounded-xl aspect-square"
+          width="150"
+          height="150"
+          class="min-w-[150px] min-h-[150px] object-cover rounded-xl aspect-square"
         />
       </div>
       <div class="flex flex-col justify-evenly text-white h-48 cursor-default">

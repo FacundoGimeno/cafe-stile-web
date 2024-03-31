@@ -7,20 +7,24 @@
   >
     <Slide :key="currentSlide">
       <div
-        class="flex items-center justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg mt-8 rounded-md md:w-2/3 w-[80%] h-2/3 hover:scale-105 transition slide"
+        class="flex lg:flex-row flex-col items-center lg:justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg sm:mt-8 mt-0 rounded-md sm:w-2/3 w-[100%] lg:h-2/3 h-[85%]  sm:overflow-hidden overflow-y-auto sm:hover:scale-105 transition slide"
       >
         <img
           :src="currentImage.image"
           alt=""
           width="1000"
           height="1000"
-          class="w-72 ml-6 object-fill rounded-lg bg-purple-700 bg-opacity-40 p-4 -rotate-2 shadow-lg shadow-purple-900 hover:scale-105 transition"
+          class="lg:w-72 sm:w-60 w-52 lg:ml-6 object-fill rounded-lg bg-purple-700 bg-opacity-40 p-4 -rotate-2 shadow-lg shadow-purple-900 hover:scale-105 transition"
         />
-        <div class="flex flex-col items-center justify-between text-white font-thin mx-6 h-96 w-1/2 cursor-default">
-          <p class="text-5xl font-light">{{ currentImage.name }}</p>
+        <div
+          class="flex flex-col items-center lg:justify-between justify-evenly text-white sm:text-base text-sm font-thin sm:mx-6 mx-0 lg:h-96 h-full lg:mt-0 mt-2 lg:w-1/2 sm:w-auto w-full cursor-default"
+        >
+          <p class="lg:text-5xl sm:text-4xl text-3xl font-light">
+            {{ currentImage.name }}
+          </p>
           <p class="">{{ currentImage.description }}</p>
-          <p class="self-end italic">Age: {{ currentImage.age }}</p>
-          <p class="self-end italic">Role: {{ currentImage.role }}</p>
+          <p class="lg:self-end italic">Age: {{ currentImage.age }}</p>
+          <p class="lg:self-end italic">Role: {{ currentImage.role }}</p>
         </div>
       </div>
     </Slide>

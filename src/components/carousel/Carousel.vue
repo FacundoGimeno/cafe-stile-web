@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row w-full justify-center items-center h-full">
+  <div class="flex flex-row w-full justify-center items-center h-full sm:gap-0">
     <div
       v-if="navigationEnabled"
       @click="prevSlide"

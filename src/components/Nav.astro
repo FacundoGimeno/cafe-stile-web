@@ -2,20 +2,20 @@
 import { Picture } from "astro:assets";
 ---
 
-<div class="md:mx-[10%] md:mt-[1%]">
+<div class="lg:mx-[10%] lg:mt-[1%]">
   <Picture
     src="/banner.webp"
     alt=""
     width="1900"
     height="400"
-    class="rounded-t-md h-[400px] object-cover"
+    class="rounded-t-md"
     loading="eager"
   />
   <div
-    class="bg-gradient-to-r from-yellow-400 to-purple-600 h-14 flex flex-row items-center justify-around text-white font-semibold rounded-b-md"
+    class="bg-gradient-to-r from-yellow-400 to-purple-600 h-14 flex flex-row items-center justify-around text-white text-xl rounded-b-md"
   >
-    <a href="#aboutUs" class="text-xl hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">About us</a>
-    <a href="#menu" class="text-xl hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">Menu</a>
-    <a href="#staff" class="text-xl hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">Staff</a>
+    <a href="#aboutUs" class="hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">About us</a>
+    <a href="#menu" class="hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">Menu</a>
+    <a href="#staff" class="hover:scale-125 drop-shadow-md hover:drop-shadow-xl transition">Staff</a>
   </div>
 </div>

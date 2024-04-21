@@ -7,8 +7,8 @@
   >
     <Slide :key="currentSlide">
       <div
-        class="flex lg:flex-row flex-col items-center lg:justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg sm:mt-8 mt-0 rounded-md sm:w-2/3 w-[100%] lg:h-2/3 h-[85%]  sm:overflow-hidden overflow-y-auto sm:hover:scale-105 transition slide"
-      >
+        class="flex lg:flex-row flex-col items-center lg:justify-between p-4 bg-amber-400 bg-opacity-10 shadow-lg sm:mt-8 mt-0 rounded-md xl:w-2/3 lg:w-full md:w-2/3 sm:w-full lg:h-2/3 h-[85%] sm:overflow-hidden overflow-y-auto sm:hover:scale-105 transition slide"
+        >
         <img
           :src="currentImage.image"
           alt=""

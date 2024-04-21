@@ -1,13 +1,15 @@
 <template>
-  <div class="flex flex-row w-full justify-center items-center h-full sm:gap-0">
+  <div
+    class="flex flex-row w-full justify-around items-center h-full gap-0"
+    @touchstart="handleTouchStart"
+    @touchend="handleTouchEnd"
+  >
     <div
       v-if="navigationEnabled"
       @click="prevSlide"
       class="flex items-center justify-center text-white scale-110 w-[10%] h-1/6 hover:scale-150 transition cursor-pointer"
     >
-      <i
-        class="fa-solid fa-chevron-left scale-150"
-      ></i>
+      <i class="fa-solid fa-chevron-left scale-150"></i>
     </div>
     <slot :currentImage="currentImage" :currentSlide="currentSlide"></slot>
     <div
@@ -15,9 +17,7 @@
       @click="nextSlide"
       class="flex items-center justify-center text-white scale-110 w-[10%] h-1/6 hover:scale-150 transition cursor-pointer"
     >
-      <i
-        class="fa-solid fa-chevron-right scale-150"
-      ></i>
+      <i class="fa-solid fa-chevron-right scale-150"></i>
     </div>
   </div>
 </template>
@@ -30,6 +30,8 @@ export default {
   setup(props) {
     const dataList = ref(props.list);
     const currentSlide = ref(0);
+    const touchstartX = ref(0);
+    const touchendX = ref(0);
     const autoPlayEnabled = ref(
       props.startAutoplay === undefined ? true : props.startAutoplay
     );
@@ -66,6 +68,20 @@ export default {
       autoPlay();
     }
 
+    const handleTouchStart = (e) => {
+      touchstartX.value = e.touches[0].screenX;
+    };
+
+    const handleTouchEnd = (e) => {
+      touchendX.value = e.changedTouches[0].screenX;
+      if (touchendX.value < touchstartX.value) {
+        nextSlide();
+      }
+      if (touchendX.value > touchstartX.value) {
+        prevSlide();
+      }
+    };
+
     const currentImage = computed(() => {
       return dataList.value[currentSlide.value];
     });
@@ -74,6 +90,8 @@ export default {
       currentSlide,
       nextSlide,
       prevSlide,
+      handleTouchStart,
+      handleTouchEnd,
       navigationEnabled,
       currentImage,
     };

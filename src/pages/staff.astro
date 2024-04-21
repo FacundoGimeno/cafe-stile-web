@@ -3,9 +3,10 @@ import StaffCarousel from "../components/carousel/StaffCarousel.vue";
 ---
 
 <main
-  class="h-dvh flex flex-col items-center justify-start md:p-8 sm:p-4 p-1 mt-20 rounded-lg"
+  class="h-dvh flex flex-col items-center justify-start xl:p-6 p-2 mt-20 rounded-lg"
+  transition:animate="slide"
 >
-  <h1 class="text-7xl text-center font-light text-white cursor-default">
+  <h1 class="text-7xl text-center font-light text-amber-100 cursor-default">
     Staff
   </h1>
   <StaffCarousel client:only />

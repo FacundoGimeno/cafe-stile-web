@@ -2,9 +2,12 @@
 import FoodMenu from "../components/menu/FoodMenu.vue";
 ---
 
-<main class="h-auto flex flex-col gap-8 md:p-8 p-4 my-20">
-  <h1 class="text-7xl text-center font-light text-white cursor-default">
+<main
+  class="h-auto flex flex-col gap-8 md:p-8 p-4 my-20"
+  transition:animate="slide"
+>
+  <h1 class="text-7xl text-center font-light text-amber-100 cursor-default">
     Menu
   </h1>
-  <FoodMenu client:load />
+  <FoodMenu client:visible />
 </main>

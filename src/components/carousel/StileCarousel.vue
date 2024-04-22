@@ -7,7 +7,7 @@
           loading="lazy"
           ismap=""
           decoding="auto"
-          class="md:min-w-[500px] md:max-w-[700px] w-full object-cover drop-shadow-xl rounded-md hover:scale-105 transition"
+          class="md:min-w-[500px] md:max-w-[700px] w-full p-6 object-cover rounded-md hover:scale-105 transition drop-shadow-2xl bg-violet-400 bg-opacity-30"
         />
     </Slide>
   </Carousel>

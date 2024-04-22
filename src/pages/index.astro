@@ -6,26 +6,29 @@ import Staff from "./staff.astro";
 ---
 
 <Layout title="Cafe Stile - Home">
-  <a
-    href="/#"
-    class="fixed z-10 md:left-[95%] sm:left-[90%] left-[87%] top-[90%] text-white bg-amber-800 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer md:scale-125 md:hover:scale-150 hover:scale-110 transition"
+  <section
+    id="aboutUs"
+    class="notshowing snap-start snap-always bg-amano bg-cover md:bg-center bg-right"
   >
-    <i class="fa-solid fa-chevron-up"></i>
-  </a>
-  <section id="aboutUs" class="notshowing">
-    <AboutUs />
+    <div class="bg-slate-900 bg-opacity-80">
+      <AboutUs />
+    </div>
   </section>
-  <div class="flex items-center justify-center">
-    <hr class="h-1 bg-slate-200 w-96 self-center rounded-full" />
-  </div>
-  <section id="menu" class="notshowing">
-    <Menu />
+  <section
+    id="menu"
+    class="notshowing snap-start snap-always bg-maika bg-cover md:bg-center bg-right"
+  >
+    <div class="bg-slate-900 bg-opacity-80">
+      <Menu />
+    </div>
   </section>
-  <div class="flex items-center justify-center">
-    <hr class="h-1 bg-slate-200 w-96 self-center rounded-full" />
-  </div>
-  <section id="staff" class="notshowing">
-    <Staff />
+  <section
+    id="staff"
+    class="notshowing snap-start snap-always bg-kaho bg-cover md:bg-center bg-right"
+  >
+    <div class="bg-slate-900 bg-opacity-80">
+      <Staff />
+    </div>
   </section>
 </Layout>
 

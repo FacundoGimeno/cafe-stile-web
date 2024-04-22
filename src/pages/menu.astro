@@ -3,10 +3,9 @@ import FoodMenu from "../components/menu/FoodMenu.vue";
 ---
 
 <main
-  class="h-auto flex flex-col gap-8 md:p-8 p-4 my-20"
-  transition:animate="slide"
+  class="h-dvh flex flex-col gap-8 md:p-2 my-20 md:mx-[10%] mx-0 overflow-auto no-scrollbar"
 >
-  <h1 class="text-7xl text-center font-light text-amber-100 cursor-default">
+  <h1 class="text-7xl text-center font-light text-amber-100 cursor-default mt-[3%]">
     Menu
   </h1>
   <FoodMenu client:visible />

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  },
+
+  {
+    "id": "2",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  },
+
+  {
+    "id": "3",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  },
+
+  {
+    "id": "4",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Omurice",
+    "description": "Our special omurice made with love to you",
+    "price": "1000",
+    "image": "https://anime2.b-cdn.net/posts/547/547648/547648.jpg"
+  }
+]

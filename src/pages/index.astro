@@ -8,7 +8,7 @@ import Staff from "./staff.astro";
 <Layout title="Cafe Stile - Home">
   <section
     id="aboutUs"
-    class="notshowing snap-start snap-always bg-amano bg-cover md:bg-center bg-right"
+    class="notshowing snap-start snap-always bg-amano bg-cover md:bg-center bg-right bg-no-repeat"
   >
     <div class="bg-slate-900 bg-opacity-80">
       <AboutUs />
@@ -16,7 +16,7 @@ import Staff from "./staff.astro";
   </section>
   <section
     id="menu"
-    class="notshowing snap-start snap-always bg-maika bg-cover md:bg-center bg-right"
+    class="notshowing snap-start snap-always bg-maika bg-cover md:bg-center bg-right bg-no-repeat"
   >
     <div class="bg-slate-900 bg-opacity-80">
       <Menu />
@@ -24,7 +24,7 @@ import Staff from "./staff.astro";
   </section>
   <section
     id="staff"
-    class="notshowing snap-start snap-always bg-kaho bg-cover md:bg-center bg-right"
+    class="notshowing snap-start snap-always bg-kaho bg-cover md:bg-center bg-right bg-no-repeat"
   >
     <div class="bg-slate-900 bg-opacity-80">
       <Staff />
@@ -39,7 +39,7 @@ import Staff from "./staff.astro";
     });
   });
 
-  const hiddenElements = document.querySelectorAll(".notshowing");
+  const hiddenElements =  document.querySelectorAll(".notshowing");
   hiddenElements.forEach((el) => observer.observe(el));
 </script>
 
@@ -48,7 +48,7 @@ import Staff from "./staff.astro";
     opacity: 0;
     filter: blur(2px);
     transform: translateX(-10%);
-    transition: all 2s;
+    transition: opacity 2s, filter 2s, transform 2s;
   }
   .show {
     opacity: 1;

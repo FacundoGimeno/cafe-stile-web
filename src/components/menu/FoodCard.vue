@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex lg:flex-row flex-col items-center gap-4 p-4 bg-pink-300 bg-opacity-40 shadow-lg rounded-lg hover:scale-105 transition"
+    class="flex lg:flex-row flex-col items-center gap-4 p-4 bg-pink-300 bg-opacity-20 shadow-lg rounded-lg hover:scale-105 transition"
   >
     <div>
       <img

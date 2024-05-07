@@ -6,3 +6,4 @@ This is a landing page of Cafe Stile, a coffee shop from an anime tv series call
 - Astro
 - Tailwind CSS
 - JSON Server
+- Fetch API

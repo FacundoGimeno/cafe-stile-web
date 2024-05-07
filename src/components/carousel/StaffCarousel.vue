@@ -8,7 +8,7 @@
     <Slide :key="currentSlide">
       <div
         class="flex lg:flex-row flex-col items-center lg:justify-between p-4 bg-blue-300 bg-opacity-30 shadow-lg sm:mt-8 mt-0 rounded-md xl:w-2/3 lg:w-full md:w-2/3 sm:w-full lg:h-2/3 h-[85%] sm:overflow-hidden overflow-y-auto sm:hover:scale-105 transition slide"
-        >
+      >
         <img
           :src="currentImage.image"
           alt=""
@@ -47,7 +47,9 @@ export default {
 
   mounted() {
     try {
-      fetch("http://localhost:4321/assets/jsons/staff.json")
+      fetch(
+        "https://raw.githubusercontent.com/FacundoGimeno/cafestileweb.github.io/main/public/assets/jsons/staff.json"
+      )
         .then((res) => res.json())
         .then((data) => (this.staffData = data));
     } catch (error) {

@@ -10,7 +10,7 @@
         class="flex lg:flex-row flex-col items-center lg:justify-between p-4 bg-blue-300 bg-opacity-30 shadow-lg sm:mt-8 mt-0 rounded-md xl:w-2/3 lg:w-full md:w-2/3 sm:w-full lg:h-2/3 h-[85%] sm:overflow-hidden overflow-y-auto sm:hover:scale-105 transition slide"
       >
         <img
-          :src="currentImage.image"
+          :src="new URL(currentImage.image, import.meta.url)"
           alt=""
           width="1000"
           height="1000"

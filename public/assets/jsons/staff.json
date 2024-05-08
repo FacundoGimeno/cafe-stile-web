@@ -4,27 +4,27 @@
     "description": "Maika is a sweet and caring girl who can at sometimes be oblivious to things. Although she plays a sadistic character, she feels as though she is being rude to the customers, so she will continuously apologize once they have left. ",
     "age": "16",
     "role": "Sadistic / Doesu",
-    "image": "/assets/staff/Infobox_Maika.webp"
+    "image": "/cafestile/assets/staff/Infobox_Maika.webp"
   },
   {
     "name": "Hinata Kaho",
     "description": "Although Kaho plays the tsundere girl, her real personality is a carefree, kind and cheerful girl who has trouble keeping up her tsundere persona when customers are discussing video games, feeling the need to join in. When her love of games is brought up, Kaho will actually behave like a true tsundere which gets her teased by the other workers.",
     "age": "17",
     "role": "Tsundere",
-    "image": "/assets/staff/Infobox_Kaho.webp"
+    "image": "/cafestile/assets/staff/Infobox_Kaho.webp"
   },
   {
     "name": "Amano Miu",
     "description": "Miu Amano is one of the waitresses who fulfills the older sister trait, she is a 22-year-old dōjinshi artist. Her personality at work is quite a warm, friendly feeling, helping each customer as though she is an older sister with the task of taking care of her younger brother.",
     "age": "22",
     "role": "Big Sister/Onee-San",
-    "image": "/assets/staff/Infobox_Miu.webp"
+    "image": "/cafestile/assets/staff/Infobox_Miu.webp"
   },
   {
     "name": "Hoshikawa Mafuyu",
     "description": "Mafuyu Hoshikawa is a waitress at Cafe Stile who is also a sophomore college student. ",
     "age": "20",
     "role": "Little Sister / Imouto",
-    "image": "/assets/staff/Infobox_Mafuyu.webp"
+    "image": "/cafestile/assets/staff/Infobox_Mafuyu.webp"
   }
 ]

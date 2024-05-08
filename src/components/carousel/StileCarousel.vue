@@ -26,10 +26,10 @@ export default {
   data() {
     return {
       carouselSlides: [
-        new URL("/assets/stile/stile.jpeg", import.meta.url),
-        new URL("/assets/stile/stile2.png", import.meta.url),
+        new URL("/assets/stile/stile.webp", import.meta.url),
+        new URL("/assets/stile/stile2.webp", import.meta.url),
         new URL("/assets/stile/stile3.webp", import.meta.url),
-        new URL("/assets/stile/stile4.jpg", import.meta.url),
+        new URL("/assets/stile/stile4.webp", import.meta.url),
       ],
     };
   },

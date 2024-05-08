@@ -83,7 +83,7 @@ export default {
     };
 
     const currentImage = computed(() => {
-      return dataList.value[currentSlide.value];
+      return new URL(dataList.value[currentSlide.value], import.meta.url);
     });
 
     return {
